@@ -39,7 +39,7 @@
 
         for (let i = bursts.length - 1; i >= 0; i--) {
             const burst = bursts[i];
-            const age = now - burst.started;
+            const age = Math.max(0, now - burst.started);
             if (age >= burst.duration) {
                 bursts.splice(i, 1);
                 continue;
