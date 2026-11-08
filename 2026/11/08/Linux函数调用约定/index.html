@@ -53,7 +53,7 @@
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>LOADING</h2>
-                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <p>加载过慢请使用科学上网</p>
                     <img src="/images/loading.gif" />
                 </div>
             </div>
@@ -168,7 +168,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/Linux/" style="color: #ffa2c4">
+                <a href="/tags/Linux/" style="color: #00a596">
                     Linux
                 </a>
             </span>
@@ -207,10 +207,10 @@ int main() {
 }
 </code></pre>
 <h2 id="X86调用约定"><a href="#X86调用约定" class="headerlink" title="X86调用约定"></a>X86调用约定</h2><ul>
-<li>全部通过栈传递,由调用者平衡栈.<br> <img src="/images/0.2/X86Call.png" alt="X86 函数调用示意图"></li>
+<li>全部通过栈传递,由调用者平衡栈.<br> <img src="/images/pwn%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/0.2/X86Call.png" alt="X86 函数调用示意图"></li>
 </ul>
 <h2 id="X64调用约定"><a href="#X64调用约定" class="headerlink" title="X64调用约定"></a>X64调用约定</h2><ul>
-<li>前6个参数通过RDI,RSI,RDX,RCX,R8,R9传参,其余通过栈传参,由调用者平衡栈.<br> <img src="/images/0.2/X64Call.png" alt="X64 函数调用示意图"></li>
+<li>前6个参数通过RDI,RSI,RDX,RCX,R8,R9传参,其余通过栈传参,由调用者平衡栈.<br> <img src="/images/pwn%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/0.2/X64Call.png" alt="X64 函数调用示意图"></li>
 </ul>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
 <li>Linux X86和X64各有一套最常用的默认用户态函数ABI,即上面记录的.</li>
